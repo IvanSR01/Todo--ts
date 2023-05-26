@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background-color: rgb(43, 45, 46);
+	display: flex;
+	justify-content: center;
+	font-family: 'Inter';
+}
+.body{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 40px;
+}
+button{
+	padding: 5px 20px;
+	font-size: 23px;
+	background-color: #fbf;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: background-color 0.5s ;
+}
+button:hover{
+	background-color: rgb(43, 45, 46);
+	border: 2px solid #fbf;
+	color: #fbf;
+}
+.add{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 50px;
+	input{
+		width: 400px;
+		height: 40px;
+		padding: 20px;
+		box-sizing: border-box;
+		outline: none;
+		outline: 2px solid transparent;
+		font-size: 23px;
+		transition: all 0.7s;
+	}
+	input:focus{
+		outline-color: #fbf;
+	}
+	button{
+		padding: 0px 20px;
+	}
+	
+}
+
+.items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #fff;
+	gap: 20px;
+	h2{
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	.item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 30px;
+		box-sizing: border-box;
+		width: 510px;
+		background-color: #fff;
+		color: #000;
+		font-size: 30px;
+		
+	}
+
+	.complete{
+		text-decoration: line-through;
+	}
+}
